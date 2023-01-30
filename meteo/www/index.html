@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+    <title>Meteo</title>
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+<!-- Fixed navbar: https://materializecss.com/navbar.html -->
+<div class="navbar-fixed">
+    <nav class="grey">
+        <div class="nav-wrapper container">
+            <a href="#!" class="brand-logo center"> <h5 id="city">&nbsp;</h5></a>
+        </div>
+    </nav>
+</div>
+<!-- Fixed floating action button: https://materializecss.com/floating-action-button.html -->
+<div class="fixed-action-btn">
+    
+</div>
+<!-- Grid: https://materializecss.com/grid.html -->
+<div class="container  marge">
+    <div class="row">
+        <!-- Progress indicator (preloader): https://materializecss.com/preloader.html -->
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+        <div class="col s12">
+             <ul class="tab-nav">
+                <li><a href="#" data-tab="onglet1" class="tab-nav-active">Méteo</a></li>
+                <li><a href="#" data-tab="onglet2">AstroPhoto</a></li>
+
+            </ul>
+
+            <div id="onglet1" class="tab tab-active">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <section class="content">
+                       
+                        <div id="date"></div>
+                        <div id="day"></div>
+                        <div id="time"></div>
+
+                        <div id="meteo"></div>
+                        <div id="icon"></div>
+
+                        <a class="btn-floating btn-large waves-effect waves-light blue-grey" id="renew"><i
+                            class="material-icons">autorenew</i></a>
+
+
+
+                        <div id="temp">
+                            <div>
+                                <div id="min"></div>
+                            </div>
+                        </div>
+                        <div id="tempm">
+                            <div>
+                                <div id="max"></div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+
+            <div id="onglet2" class="tab">
+                <div class="box">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <section class="content">
+    
+    
+                        <div>
+                            <div id="coord"></div>
+                        </div>
+                        <div>
+                            <div id="clouds"></div>
+                        </div>
+                        <div>
+                            <div id="sunrise"></div>
+                        </div>
+                        <div>
+                            <div id="sunset"></div>
+                        </div>
+                        <div>
+                            <div id="humidity"></div>
+                        </div>
+                        <div>
+                            <div id="wind"></div>
+                        </div>
+                        <div>
+                            <div id="gust"></div>
+                        </div>
+                        <div>
+                            <div id="deg"></div>
+                        </div>
+                        <div>
+                            <div id="pressure"></div>
+                        </div>
+                    </section>
+                </div>
+    
+            </div>
+        </div>
+        <div class="col s12" id="weather">
+           
+            
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="cordova.js"></script>
+<script src="js/weather.js"></script>
+<script defer src="js/app.js"></script>
+</body>
+</html>
